@@ -124,14 +124,8 @@ function highLow(){
 
 
 function getWins(arr1){
-
-  holder = {document.getElementById("[0]"), document.getElementById("[1]"), document.getElementById("[2]")};
-
-  document.getElementById("winningNumbers").innerHTML = arr1[0] + arr1[1] + arr1[2];
-
-
-
-
+  document.getElementById("winningNumbers").appendChild(document.createTextNode("\n"));
+  document.getElementById("winningNumbers").appendChild(document.createTextNode(arr1[0] +""+ arr1[1] +""+ arr1[2]));
 
 
 }

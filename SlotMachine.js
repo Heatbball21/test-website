@@ -38,7 +38,7 @@ function reset(){
   displayHigh(high);
 }
 
-//check if the each index is the same
+//check if each index is the same
 function check(arr1){
   if (arr1[0] == arr1[1] && arr1[0] == arr1[2]){
     // console.log("winner");
@@ -46,6 +46,7 @@ function check(arr1){
     displayWins(wins);
     bank += 40;
     displayBank(bank);
+    getWins(arr1);
   }
 }
 
@@ -118,4 +119,19 @@ function highLow(){
     high = profit;
     displayHigh(high);
   }
+}
+
+
+
+function getWins(arr1){
+
+  holder = {document.getElementById("[0]"), document.getElementById("[1]"), document.getElementById("[2]")}
+
+  document.getElementById("winningNumbers").innerHTML = arr1[0] + arr1[1] + arr1[2];
+
+
+
+
+
+
 }

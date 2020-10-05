@@ -46,7 +46,7 @@ function check(arr1){
     displayWins(wins);
     bank += 40;
     displayBank(bank);
-    getWins(arr1);
+    //getWins(arr1);
   }
 }
 
@@ -124,7 +124,8 @@ function highLow(){
 
 
 function getWins(arr1){
-  document.getElementById("winningNumbers").appendChild(document.createTextNode("\n" + arr1[0] +""+ arr1[1] +""+ arr1[2]));
+  document.getElementById("winningNumbers").appendChild(document.createTextNode("\n"
+  + arr1[0] +""+ arr1[1] +""+ arr1[2]));
 
 
 }

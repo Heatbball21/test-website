@@ -46,7 +46,7 @@ function check(arr1){
     displayWins(wins);
     bank += 40;
     displayBank(bank);
-    //getWins(arr1);
+    getWins(arr1);
   }
 }
 
